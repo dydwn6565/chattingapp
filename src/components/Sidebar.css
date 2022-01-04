@@ -1,6 +1,22 @@
+.side_bar {
+  display: flex !important;
+  flex-direction: column;
+}
+
 .sidebar_box {
-  border: right;
-  overflow: auto;
+  border-right: 1px solid lightgrey;
+  overflow-y: auto;
+  height: 80vh;
   flex-grow: 1;
-  width: 100px !important;
+}
+
+.sidebar_id {
+  padding: 2%;
+  border-top: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+.sidebar_new_button {
+  width: 200px;
+  align-items: center;
 }
