@@ -110,7 +110,7 @@ export default function Sidebar({ id }) {
           {conversationsOpen ? (
             <NewConversationModal closeModal={closeModal} />
           ) : (
-            <NewContactModal cloaseModal={closeModal} />
+            <NewContactModal closeModal={closeModal} />
           )}
           {/* <Box sx={style}>
             <Typography id="modal-modal-title" variant="h6" component="h2">
