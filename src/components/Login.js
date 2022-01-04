@@ -1,15 +1,17 @@
 import React, { useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
-export default function Login({ userId }) {
+export default function Login({ setId }) {
   const idRef = useRef();
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(idRef.current.value);
+    // console.log(idRef.current.value);
+    setId(idRef.current.value);
   };
 
   const createId = () => {
-    console.log(uuidv4());
+    // console.log(uuidv4());
+    setId(uuidv4());
   };
   return (
     <form onSubmit={submitHandler}>

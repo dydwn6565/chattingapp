@@ -1,0 +1,6 @@
+.sidebar_box {
+  border: right;
+  overflow: auto;
+  flex-grow: 1;
+  width: 100px !important;
+}
